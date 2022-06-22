@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\1b3071d13fa730ff782e041f3afd5f40\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{46EE488F-B106-3579-8A0F-FBF74E164E95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

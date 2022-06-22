@@ -1,0 +1,329 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"external/SDL/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3087,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3094,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3101,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3108,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3132,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3140,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3148,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3156,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3163,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3178,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"external/SDL/MinSizeRel/SDL2.lib"
+			],
+			"targetId" : "SDL2::@325f9cd2ad4d12a63863",
+			"targetIndex" : 4,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"external/SDL/MinSizeRel/SDL2.dll"
+			],
+			"targetId" : "SDL2::@325f9cd2ad4d12a63863",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"external/SDL/MinSizeRel/SDL2main.lib"
+			],
+			"targetId" : "SDL2main::@325f9cd2ad4d12a63863",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"external/SDL/MinSizeRel/SDL2-static.lib"
+			],
+			"targetId" : "SDL2-static::@325f9cd2ad4d12a63863",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"external/SDL/MinSizeRel/SDL2_test.lib"
+			],
+			"targetId" : "SDL2_test::@325f9cd2ad4d12a63863",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "cmake",
+			"exportName" : "SDL2Targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "SDL2::@325f9cd2ad4d12a63863",
+					"index" : 4
+				}
+			],
+			"paths" : 
+			[
+				"external/SDL/CMakeFiles/Export/cmake/SDL2Targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "cmake",
+			"exportName" : "SDL2mainTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "SDL2main::@325f9cd2ad4d12a63863",
+					"index" : 7
+				}
+			],
+			"paths" : 
+			[
+				"external/SDL/CMakeFiles/Export/cmake/SDL2mainTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "cmake",
+			"exportName" : "SDL2staticTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "SDL2-static::@325f9cd2ad4d12a63863",
+					"index" : 5
+				}
+			],
+			"paths" : 
+			[
+				"external/SDL/CMakeFiles/Export/cmake/SDL2staticTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "cmake",
+			"exportName" : "SDL2testTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "SDL2_test::@325f9cd2ad4d12a63863",
+					"index" : 6
+				}
+			],
+			"paths" : 
+			[
+				"external/SDL/CMakeFiles/Export/cmake/SDL2testTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Devel",
+			"destination" : "cmake",
+			"paths" : 
+			[
+				"build/external/SDL/SDL2Config.cmake",
+				"build/SDL2ConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "include/SDL2",
+			"paths" : 
+			[
+				"external/SDL/include/SDL.h",
+				"external/SDL/include/SDL_assert.h",
+				"external/SDL/include/SDL_atomic.h",
+				"external/SDL/include/SDL_audio.h",
+				"external/SDL/include/SDL_bits.h",
+				"external/SDL/include/SDL_blendmode.h",
+				"external/SDL/include/SDL_clipboard.h",
+				"external/SDL/include/SDL_config.h",
+				"external/SDL/include/SDL_config_android.h",
+				"external/SDL/include/SDL_config_emscripten.h",
+				"external/SDL/include/SDL_config_iphoneos.h",
+				"external/SDL/include/SDL_config_macosx.h",
+				"external/SDL/include/SDL_config_minimal.h",
+				"external/SDL/include/SDL_config_ngage.h",
+				"external/SDL/include/SDL_config_os2.h",
+				"external/SDL/include/SDL_config_pandora.h",
+				"external/SDL/include/SDL_config_windows.h",
+				"external/SDL/include/SDL_config_winrt.h",
+				"external/SDL/include/SDL_copying.h",
+				"external/SDL/include/SDL_cpuinfo.h",
+				"external/SDL/include/SDL_egl.h",
+				"external/SDL/include/SDL_endian.h",
+				"external/SDL/include/SDL_error.h",
+				"external/SDL/include/SDL_events.h",
+				"external/SDL/include/SDL_filesystem.h",
+				"external/SDL/include/SDL_gamecontroller.h",
+				"external/SDL/include/SDL_gesture.h",
+				"external/SDL/include/SDL_guid.h",
+				"external/SDL/include/SDL_haptic.h",
+				"external/SDL/include/SDL_hidapi.h",
+				"external/SDL/include/SDL_hints.h",
+				"external/SDL/include/SDL_joystick.h",
+				"external/SDL/include/SDL_keyboard.h",
+				"external/SDL/include/SDL_keycode.h",
+				"external/SDL/include/SDL_loadso.h",
+				"external/SDL/include/SDL_locale.h",
+				"external/SDL/include/SDL_log.h",
+				"external/SDL/include/SDL_main.h",
+				"external/SDL/include/SDL_messagebox.h",
+				"external/SDL/include/SDL_metal.h",
+				"external/SDL/include/SDL_misc.h",
+				"external/SDL/include/SDL_mouse.h",
+				"external/SDL/include/SDL_mutex.h",
+				"external/SDL/include/SDL_name.h",
+				"external/SDL/include/SDL_opengl.h",
+				"external/SDL/include/SDL_opengl_glext.h",
+				"external/SDL/include/SDL_opengles.h",
+				"external/SDL/include/SDL_opengles2.h",
+				"external/SDL/include/SDL_opengles2_gl2.h",
+				"external/SDL/include/SDL_opengles2_gl2ext.h",
+				"external/SDL/include/SDL_opengles2_gl2platform.h",
+				"external/SDL/include/SDL_opengles2_khrplatform.h",
+				"external/SDL/include/SDL_pixels.h",
+				"external/SDL/include/SDL_platform.h",
+				"external/SDL/include/SDL_power.h",
+				"external/SDL/include/SDL_quit.h",
+				"external/SDL/include/SDL_rect.h",
+				"external/SDL/include/SDL_render.h",
+				"external/SDL/include/SDL_rwops.h",
+				"external/SDL/include/SDL_scancode.h",
+				"external/SDL/include/SDL_sensor.h",
+				"external/SDL/include/SDL_shape.h",
+				"external/SDL/include/SDL_stdinc.h",
+				"external/SDL/include/SDL_surface.h",
+				"external/SDL/include/SDL_system.h",
+				"external/SDL/include/SDL_syswm.h",
+				"external/SDL/include/SDL_test.h",
+				"external/SDL/include/SDL_test_assert.h",
+				"external/SDL/include/SDL_test_common.h",
+				"external/SDL/include/SDL_test_compare.h",
+				"external/SDL/include/SDL_test_crc32.h",
+				"external/SDL/include/SDL_test_font.h",
+				"external/SDL/include/SDL_test_fuzzer.h",
+				"external/SDL/include/SDL_test_harness.h",
+				"external/SDL/include/SDL_test_images.h",
+				"external/SDL/include/SDL_test_log.h",
+				"external/SDL/include/SDL_test_md5.h",
+				"external/SDL/include/SDL_test_memory.h",
+				"external/SDL/include/SDL_test_random.h",
+				"external/SDL/include/SDL_thread.h",
+				"external/SDL/include/SDL_timer.h",
+				"external/SDL/include/SDL_touch.h",
+				"external/SDL/include/SDL_types.h",
+				"external/SDL/include/SDL_version.h",
+				"external/SDL/include/SDL_video.h",
+				"external/SDL/include/SDL_vulkan.h",
+				"external/SDL/include/begin_code.h",
+				"external/SDL/include/close_code.h",
+				"build/external/SDL/include/SDL_revision.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "external/SDL",
+		"source" : "external/SDL"
+	}
+}

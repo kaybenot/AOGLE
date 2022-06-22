@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E493B965-91EC-362E-AA87-08AD935F849A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>SDL2_test</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SDL2_test.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SDL2_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SDL2_test.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SDL2_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">SDL2_test.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">SDL2_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">SDL2_test.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">SDL2_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SDL_BUILD_MAJOR_VERSION=2;SDL_BUILD_MINOR_VERSION=23;SDL_BUILD_MICRO_VERSION=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;SDL_BUILD_MAJOR_VERSION=2;SDL_BUILD_MINOR_VERSION=23;SDL_BUILD_MICRO_VERSION=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SDL_BUILD_MAJOR_VERSION=2;SDL_BUILD_MINOR_VERSION=23;SDL_BUILD_MICRO_VERSION=1;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SDL_BUILD_MAJOR_VERSION=2;SDL_BUILD_MINOR_VERSION=23;SDL_BUILD_MICRO_VERSION=1;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SDL_BUILD_MAJOR_VERSION=2;SDL_BUILD_MINOR_VERSION=23;SDL_BUILD_MICRO_VERSION=1;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SDL_BUILD_MAJOR_VERSION=2;SDL_BUILD_MINOR_VERSION=23;SDL_BUILD_MICRO_VERSION=1;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SDL_BUILD_MAJOR_VERSION=2;SDL_BUILD_MINOR_VERSION=23;SDL_BUILD_MICRO_VERSION=1;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SDL_BUILD_MAJOR_VERSION=2;SDL_BUILD_MINOR_VERSION=23;SDL_BUILD_MICRO_VERSION=1;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/external/SDL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\CMake\bin\cmake.exe -SC:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE -BC:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build --check-stamp-file C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/SDL/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeCCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeCXXCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeRCCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeSystem.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\SDL_config.h.intermediate;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\SDL2Config.cmake.in;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\cmake\macros.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\cmake\sdlchecks.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include\SDL_config.h.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include\SDL_revision.h.cmake;E:\CMake\share\cmake-3.21\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCSourceRuns.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;E:\CMake\share\cmake-3.21\Modules\CheckIncludeFiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;E:\CMake\share\cmake-3.21\Modules\CheckOBJCSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckStructHasMember.cmake;E:\CMake\share\cmake-3.21\Modules\CheckSymbolExists.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.21\Modules\FindGit.cmake;E:\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;E:\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;E:\CMake\share\cmake-3.21\Modules\FindPkgConfig.cmake;E:\CMake\share\cmake-3.21\Modules\GNUInstallDirs.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckSourceRuns.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;E:\CMake\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/external/SDL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\CMake\bin\cmake.exe -SC:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE -BC:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build --check-stamp-file C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/SDL/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeCCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeCXXCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeRCCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeSystem.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\SDL_config.h.intermediate;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\SDL2Config.cmake.in;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\cmake\macros.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\cmake\sdlchecks.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include\SDL_config.h.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include\SDL_revision.h.cmake;E:\CMake\share\cmake-3.21\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCSourceRuns.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;E:\CMake\share\cmake-3.21\Modules\CheckIncludeFiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;E:\CMake\share\cmake-3.21\Modules\CheckOBJCSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckStructHasMember.cmake;E:\CMake\share\cmake-3.21\Modules\CheckSymbolExists.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.21\Modules\FindGit.cmake;E:\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;E:\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;E:\CMake\share\cmake-3.21\Modules\FindPkgConfig.cmake;E:\CMake\share\cmake-3.21\Modules\GNUInstallDirs.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckSourceRuns.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;E:\CMake\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/external/SDL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\CMake\bin\cmake.exe -SC:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE -BC:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build --check-stamp-file C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/SDL/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeCCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeCXXCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeRCCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeSystem.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\SDL_config.h.intermediate;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\SDL2Config.cmake.in;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\cmake\macros.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\cmake\sdlchecks.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include\SDL_config.h.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include\SDL_revision.h.cmake;E:\CMake\share\cmake-3.21\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCSourceRuns.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;E:\CMake\share\cmake-3.21\Modules\CheckIncludeFiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;E:\CMake\share\cmake-3.21\Modules\CheckOBJCSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckStructHasMember.cmake;E:\CMake\share\cmake-3.21\Modules\CheckSymbolExists.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.21\Modules\FindGit.cmake;E:\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;E:\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;E:\CMake\share\cmake-3.21\Modules\FindPkgConfig.cmake;E:\CMake\share\cmake-3.21\Modules\GNUInstallDirs.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckSourceRuns.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;E:\CMake\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/external/SDL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\CMake\bin\cmake.exe -SC:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE -BC:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build --check-stamp-file C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/SDL/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeCCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeCXXCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeRCCompiler.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\CMakeFiles\3.21.3\CMakeSystem.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\SDL_config.h.intermediate;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\SDL2Config.cmake.in;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\cmake\macros.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\cmake\sdlchecks.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include\SDL_config.h.cmake;C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\include\SDL_revision.h.cmake;E:\CMake\share\cmake-3.21\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCSourceRuns.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;E:\CMake\share\cmake-3.21\Modules\CheckIncludeFiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;E:\CMake\share\cmake-3.21\Modules\CheckOBJCSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\CheckStructHasMember.cmake;E:\CMake\share\cmake-3.21\Modules\CheckSymbolExists.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.21\Modules\FindGit.cmake;E:\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;E:\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;E:\CMake\share\cmake-3.21\Modules\FindPkgConfig.cmake;E:\CMake\share\cmake-3.21\Modules\GNUInstallDirs.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;E:\CMake\share\cmake-3.21\Modules\Internal\CheckSourceRuns.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;E:\CMake\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\external\SDL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_assert.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_common.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_compare.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_crc32.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_font.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_fuzzer.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_harness.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_imageBlit.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_imageBlitBlend.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_imageFace.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_imagePrimitives.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_imagePrimitivesBlend.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_log.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_md5.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_memory.c" />
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\external\SDL\src\test\SDL_test_random.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\build\ZERO_CHECK.vcxproj">
+      <Project>{5C974BF2-5765-3279-81BB-CEE10B351F7D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
