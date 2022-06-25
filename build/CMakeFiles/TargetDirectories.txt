@@ -6,6 +6,10 @@ C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/glm/CMakeFiles/uni
 C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/glm/CMakeFiles/INSTALL.dir
 C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/glm/CMakeFiles/ALL_BUILD.dir
 C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/glm/glm/CMakeFiles/INSTALL.dir
+C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/glad/CMakeFiles/glad-generate-files.dir
+C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/glad/CMakeFiles/glad.dir
+C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/glad/CMakeFiles/INSTALL.dir
+C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/glad/CMakeFiles/ALL_BUILD.dir
 C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/SDL/CMakeFiles/SDL2_test.dir
 C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/SDL/CMakeFiles/SDL2-static.dir
 C:/Users/MineAS/Desktop/NewMeNewProjects/AOGLE/build/external/SDL/CMakeFiles/SDL2main.dir

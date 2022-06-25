@@ -4,7 +4,13 @@
     <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\src\AOGLE_Logger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\src\AOGLE_Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\src\AOGLE_Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\src\AOGLE_Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\MineAS\Desktop\NewMeNewProjects\AOGLE\src\AOGLE_Window.cpp">

@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.12)
 
 set(BUILD_SHARED_LIBS OFF)
-set(EXTERNALS glm SDL2-static SDL2main opengl32)
+set(EXTERNALS glm glad SDL2-static SDL2main opengl32)
 
 add_subdirectory(external/glm)
+add_subdirectory(external/glad)
 add_subdirectory(external/SDL)
 
 set(CMAKE_CXX_STANDARD 20)
