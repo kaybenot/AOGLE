@@ -4,7 +4,7 @@
 #include <assimp/postprocess.h>
 #include <assimp/scene.h>
 
-void AOGLE_Mesh::load_model(const AOGLE_Renderer& renderer)
+void AOGLE_Mesh::load_model(const AOGLE_Renderer& renderer) noexcept
 {
     switch (renderer.Type)
     {

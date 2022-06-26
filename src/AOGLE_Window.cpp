@@ -32,7 +32,7 @@ void AOGLE_Window::create(AOGLE_Renderer& renderer, int width, int height, std::
     }
 }
 
-void AOGLE_Window::process_events(bool& quit)
+void AOGLE_Window::process_events(bool& quit) noexcept
 {
     while(SDL_PollEvent(&event) == 1)
     {
@@ -41,7 +41,7 @@ void AOGLE_Window::process_events(bool& quit)
     }
 }
 
-void AOGLE_Window::clear(AOGLE_Renderer& renderer)
+void AOGLE_Window::clear(AOGLE_Renderer& renderer) noexcept
 {
     switch (renderer.Type)
     {
@@ -50,12 +50,11 @@ void AOGLE_Window::clear(AOGLE_Renderer& renderer)
         break;
     
     default:
-        throw std::runtime_error("Unknown renderer type: "
-            + std::to_string(static_cast<int>(renderer.Type)));
+        break;
     }
 }
 
-void AOGLE_Window::present_frame(AOGLE_Renderer& renderer)
+void AOGLE_Window::present_frame(AOGLE_Renderer& renderer) noexcept
 {
     switch (renderer.Type)
     {
@@ -64,8 +63,7 @@ void AOGLE_Window::present_frame(AOGLE_Renderer& renderer)
         break;
     
     default:
-        throw std::runtime_error("Unknown renderer type: "
-            + std::to_string(static_cast<int>(renderer.Type)));
+        break;
     }
 }
 
@@ -75,7 +73,7 @@ AOGLE_Window::AOGLE_Window()
         throw std::runtime_error(SDL_GetError());
 }
 
-AOGLE_Window::~AOGLE_Window()
+AOGLE_Window::~AOGLE_Window() noexcept
 {
     SDL_Quit();
 }

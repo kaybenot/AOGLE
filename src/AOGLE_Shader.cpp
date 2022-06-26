@@ -3,6 +3,7 @@
 #include <sstream>
 #include <iostream>
 #include <vector>
+#include <stdexcept>
 
 void AOGLE_Shader::load(AOGLE_Renderer& renderer, std::string vs_file_path, std::string fs_file_path)
 {
@@ -22,7 +23,7 @@ void AOGLE_Shader::load(AOGLE_Renderer& renderer, std::string vs_file_path, std:
             vs_file.close();
         }
         else
-            std::cerr << "Could not open vertex shader file" + vs_file_path;
+            throw std::runtime_error("Could not open vertex shader file" + vs_file_path);
 
         std::string fs_code;
         std::ifstream fs_file(fs_file_path, std::ios::in);
@@ -33,7 +34,7 @@ void AOGLE_Shader::load(AOGLE_Renderer& renderer, std::string vs_file_path, std:
             fs_file.close();
         }
         else
-            std::cerr << "Could not open fragment shader file" + vs_file_path;
+            throw std::runtime_error("Could not open fragment shader file" + fs_file_path);
 
         GLint result = GL_FALSE;
         int info_log_len;
@@ -47,36 +48,32 @@ void AOGLE_Shader::load(AOGLE_Renderer& renderer, std::string vs_file_path, std:
         if(info_log_len > 0){
             std::vector<char> VertexShaderErrorMessage(info_log_len + 1);
             glGetShaderInfoLog(vs, info_log_len, NULL, &VertexShaderErrorMessage[0]);
-            std::cerr << &VertexShaderErrorMessage[0];
+            throw std::runtime_error(&VertexShaderErrorMessage[0]);
         }
 
         char const * fsp = fs_code.c_str();
         glShaderSource(fs, 1, &fsp , NULL);
         glCompileShader(fs);
 
-        // Check Fragment Shader
         glGetShaderiv(fs, GL_COMPILE_STATUS, &result);
         glGetShaderiv(fs, GL_INFO_LOG_LENGTH, &info_log_len);
         if(info_log_len > 0){
             std::vector<char> FragmentShaderErrorMessage(info_log_len + 1);
             glGetShaderInfoLog(fs, info_log_len, NULL, &FragmentShaderErrorMessage[0]);
-            std::cerr << &FragmentShaderErrorMessage[0];
+            throw std::runtime_error(&FragmentShaderErrorMessage[0]);
         }
 
-        // Link the program
-        printf("Linking program\n");
         program = glCreateProgram();
         glAttachShader(program, vs);
         glAttachShader(program, fs);
         glLinkProgram(program);
 
-        // Check the program
         glGetProgramiv(program, GL_LINK_STATUS, &result);
         glGetProgramiv(program, GL_INFO_LOG_LENGTH, &info_log_len);
         if(info_log_len > 0){
             std::vector<char> ProgramErrorMessage(info_log_len + 1);
             glGetProgramInfoLog(program, info_log_len, NULL, &ProgramErrorMessage[0]);
-            std::cerr << &ProgramErrorMessage[0];
+            throw std::runtime_error(&ProgramErrorMessage[0]);
         }
         
         glDetachShader(program, vs);
@@ -92,7 +89,7 @@ void AOGLE_Shader::load(AOGLE_Renderer& renderer, std::string vs_file_path, std:
     }
 }
 
-void AOGLE_Shader::use(AOGLE_Renderer& renderer)
+void AOGLE_Shader::use(AOGLE_Renderer& renderer) noexcept
 {
     switch (renderer.Type)
     {

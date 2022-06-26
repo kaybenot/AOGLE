@@ -22,7 +22,7 @@ private:
 public:
     RendererType Type;
 
-    void create(RendererType type = RendererType::OpenGL);
-    void set_clear_color(glm::vec4 clear_color);
-    void set_OGL_version(int major, int minor);
+    void create(RendererType type = RendererType::OpenGL) noexcept;
+    void set_clear_color(glm::vec4 clear_color) noexcept;
+    void set_OGL_version(int major, int minor) noexcept;
 };

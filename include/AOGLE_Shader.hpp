@@ -9,5 +9,5 @@ private:
 
 public:
     void load(AOGLE_Renderer& renderer, std::string vs_file_path, std::string fs_file_path);
-    void use(AOGLE_Renderer& renderer);
+    void use(AOGLE_Renderer& renderer) noexcept;
 };

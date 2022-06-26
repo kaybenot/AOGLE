@@ -26,7 +26,7 @@ private:
     GLuint vbo;
     GLuint ebo;
 
-    void load_model(const AOGLE_Renderer& renderer);
+    void load_model(const AOGLE_Renderer& renderer) noexcept;
     
 public:
     bool import_from_file(const AOGLE_Renderer& renderer, const std::string& file) noexcept;
