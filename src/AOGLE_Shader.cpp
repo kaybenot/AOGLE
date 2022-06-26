@@ -25,7 +25,7 @@ void AOGLE_Shader::load(AOGLE_Renderer& renderer, std::string vs_file_path, std:
             std::cerr << "Could not open vertex shader file" + vs_file_path;
 
         std::string fs_code;
-        std::ifstream fs_file(vs_file_path, std::ios::in);
+        std::ifstream fs_file(fs_file_path, std::ios::in);
         if(fs_file.is_open()){
             std::stringstream sstr;
             sstr << fs_file.rdbuf();
@@ -47,7 +47,7 @@ void AOGLE_Shader::load(AOGLE_Renderer& renderer, std::string vs_file_path, std:
         if(info_log_len > 0){
             std::vector<char> VertexShaderErrorMessage(info_log_len + 1);
             glGetShaderInfoLog(vs, info_log_len, NULL, &VertexShaderErrorMessage[0]);
-            printf("%s\n", &VertexShaderErrorMessage[0]);
+            std::cerr << &VertexShaderErrorMessage[0];
         }
 
         char const * fsp = fs_code.c_str();

@@ -19,6 +19,10 @@ void AOGLE_Window::create(AOGLE_Renderer& renderer, int width, int height, std::
         renderer.context = SDL_GL_CreateContext(window);
         if(renderer.context == nullptr)
             throw std::runtime_error(SDL_GetError());
+
+        if (!gladLoadGLLoader((GLADloadproc) SDL_GL_GetProcAddress))
+            throw std::runtime_error("Failed to initialize OpenGL context");
+
         renderer.set_clear_color({0.0f, 0.0f, 0.0f, 1.0f});
         break;
     
