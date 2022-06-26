@@ -13,7 +13,9 @@ void AOGLE_Window::create(AOGLE_Renderer& renderer, int width, int height, std::
     {
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, renderer.OGL_major);
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, renderer.OGL_minor);
-        SDL_GL_SetAttribute( SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+        SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+        SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
+        SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 4);
 
         window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
             width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
@@ -26,6 +28,9 @@ void AOGLE_Window::create(AOGLE_Renderer& renderer, int width, int height, std::
 
         if (!gladLoadGLLoader((GLADloadproc) SDL_GL_GetProcAddress))
             throw std::runtime_error("Failed to initialize OpenGL context");
+
+        glEnable(GL_DEPTH_TEST);
+        glEnable(GL_MULTISAMPLE);
 
         ImGui::CreateContext();
         ImGuiIO& io = ImGui::GetIO();
