@@ -2,12 +2,12 @@
 
 int main(int argc, char* argv[])
 {
-    AOGLE_Renderer renderer;
-    AOGLE_Window window;
-    AOGLE_Mesh mesh;
-    AOGLE_Shader shader;
-    AOGLE_Camera camera;
-    AOGLE_Debug debug;
+    AOGLE::Renderer renderer;
+    AOGLE::Window window;
+    AOGLE::Mesh mesh;
+    AOGLE::Shader shader;
+    AOGLE::Camera camera;
+    AOGLE::Debug debug;
 
     renderer.create();
     window.create(renderer, 800, 600, "Test window");
