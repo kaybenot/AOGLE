@@ -8,6 +8,7 @@ int main(int argc, char* argv[])
     AOGLE::Shader shader;
     AOGLE::Camera camera;
     AOGLE::Debug debug;
+    AOGLE::Input input;
 
     renderer.create();
     window.create(renderer, 800, 600, "Test window");
@@ -17,10 +18,11 @@ int main(int argc, char* argv[])
     bool quit = false;
     while(!quit)
     {
-        window.process_events(quit);
+        window.process_events(quit, input);
         window.clear(renderer);
 
         debug.print_debug();
+        debug.debug_logic(input);
         camera.pos = debug.camera_pos;
 
         camera.calculate_MVP(renderer);

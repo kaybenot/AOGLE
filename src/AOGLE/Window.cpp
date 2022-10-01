@@ -49,13 +49,25 @@ namespace AOGLE
         }
     }
 
-    void Window::process_events(bool& quit) noexcept
+    void Window::process_events(bool& quit, Input& input) noexcept
     {
         while(SDL_PollEvent(&event) == 1)
         {
             ImGui_ImplSDL2_ProcessEvent(&event);
-            if(event.type == SDL_QUIT)
+            switch (event.type)
+            {
+            case SDL_QUIT:
                 quit = true;
+                break;
+            case SDL_KEYDOWN:
+                input.keys[event.key.keysym.sym] = true;
+                break;
+            case SDL_KEYUP:
+                input.keys[event.key.keysym.sym] = false;
+                break;
+            default:
+                break;
+            }
         }
     }
 

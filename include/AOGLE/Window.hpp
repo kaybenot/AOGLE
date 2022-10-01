@@ -1,5 +1,6 @@
 #pragma once
 #include "Renderer.hpp"
+#include "Input.hpp"
 #include <string>
 
 namespace AOGLE
@@ -12,7 +13,7 @@ namespace AOGLE
 
     public:
         void create(Renderer& renderer, int width, int height, std::string title);
-        void process_events(bool& quit) noexcept;
+        void process_events(bool& quit, Input& input) noexcept;
         void clear(Renderer& renderer) noexcept;
         void present_frame(Renderer& renderer) noexcept;
 
